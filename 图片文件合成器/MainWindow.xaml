@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="图片文件合成器.MainWindow"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="280" Width="440" BorderThickness="24" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize">
+    <Window.Effect>
+        <DropShadowEffect BlurRadius="24" Color="#FF858484" Direction="90" ShadowDepth="3"/>
+    </Window.Effect>
+    <Grid>
+        <Canvas MouseLeftButtonDown="Canvas_MouseLeftButtonDown" Background="Transparent">
+            <Label Content="图片文件合成器" Canvas.Left="142" Canvas.Top="10" RenderTransformOrigin="1.3,-0.16" Foreground="#FF807777" FontSize="14"/>
+            <Image x:Name="BtnMin" Height="20" Canvas.Left="337" Canvas.Top="10" Width="20" Source="img/Min.png" Cursor="Hand" MouseLeftButtonDown="BtnMin_MouseLeftButtonDown"/>
+            <Image x:Name="BtnClose" Height="20" Canvas.Left="362" Canvas.Top="10" Width="20" Source="img/Close.png" Cursor="Hand" MouseLeftButtonDown="BtnClose_MouseLeftButtonDown"/>
+            <Image x:Name="zip" Height="100" Canvas.Left="257" Canvas.Top="72" Width="100" Source="img/zip.png" Cursor="Hand" MouseLeftButtonDown="zip_MouseLeftButtonDown"/>
+            <Image x:Name="img" Height="100" Canvas.Left="37" Canvas.Top="73" Width="100" Source="img/img.png" Cursor="Hand" MouseLeftButtonDown="img_MouseLeftButtonDown"/>
+            <Image x:Name="add" Height="100" Canvas.Left="150" Canvas.Top="72" Width="100" Source="img/add.png" Cursor="Hand" MouseLeftButtonDown="add_MouseLeftButtonDown"/>
+            <Label Content="©TT" Canvas.Left="341" Canvas.Top="196" Height="26" Width="41" Foreground="#FF575454" Cursor="Hand" FontSize="12" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+        </Canvas>
+    </Grid>
+</Window>

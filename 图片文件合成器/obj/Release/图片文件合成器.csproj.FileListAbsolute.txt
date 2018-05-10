@@ -1,0 +1,14 @@
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\bin\Release\图片文件合成器.exe
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\bin\Release\图片文件合成器.pdb
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\MainWindow.baml
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\Message.baml
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\MainWindow.g.cs
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\Message.g.cs
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\App.g.cs
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器_MarkupCompile.cache
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.g.resources
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.Properties.Resources.resources
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.csproj.GenerateResource.Cache
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.exe
+C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.pdb
+C:\Users\TT\documents\visual studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.csprojResolveAssemblyReference.cache
