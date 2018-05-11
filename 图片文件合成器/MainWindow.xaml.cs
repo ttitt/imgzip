@@ -4,12 +4,14 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -28,6 +30,8 @@ namespace 图片文件合成器
         public MainWindow()
         {
             InitializeComponent();
+            DoubleAnimation da = new DoubleAnimation(0, 1, new Duration(TimeSpan.FromSeconds(0.4)));
+            TTMainWindow.BeginAnimation(UIElement.OpacityProperty, da);
         }
 
         private void Canvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -44,9 +48,17 @@ namespace 图片文件合成器
 
         private void BtnClose_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            System.Timers.Timer time = new System.Timers.Timer(400);
+            time.Elapsed += new System.Timers.ElapsedEventHandler(MainClose);
+            time.AutoReset = false;
+            time.Enabled = true;
+            DoubleAnimation da = new DoubleAnimation(1, 0, new Duration(TimeSpan.FromSeconds(0.4)));
+            TTMainWindow.BeginAnimation(UIElement.OpacityProperty, da);
+        }
+        private void MainClose(object source, System.Timers.ElapsedEventArgs e)
+        {
             Environment.Exit(0);
         }
-
         private void BtnMin_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.WindowState = System.Windows.WindowState.Minimized;
@@ -55,7 +67,7 @@ namespace 图片文件合成器
         private void img_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
-            dialog.Filter = "图片文件|*.jpg;*png";
+            dialog.Filter = "图片文件|*.jpg;*.png;*.jpeg;*.bmp;*.gif";
             if (dialog.ShowDialog() == true)
             {
                 fileimg = dialog.FileName;
@@ -68,7 +80,7 @@ namespace 图片文件合成器
         private void zip_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
-            dialog.Filter = "压缩文件|*.rar;*zip;*7z";
+            dialog.Filter = "压缩文件|*.rar;*.zip;*.7z;*.tar;*.gz";
             if (dialog.ShowDialog() == true)
             {
                 filezip = dialog.FileName;
