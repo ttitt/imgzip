@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace 图片文件合成器
 {
     /// <summary>
-    /// Message.xaml 的交互逻辑
+    /// MsgNG.xaml 的交互逻辑
     /// </summary>
-    public partial class Message : Window
+    public partial class MsgNG : Window
     {
-        public Message()
+        public MsgNG()
         {
             InitializeComponent();
         }

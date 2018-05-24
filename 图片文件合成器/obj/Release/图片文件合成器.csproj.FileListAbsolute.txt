@@ -12,3 +12,19 @@ C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片�
 C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.exe
 C:\Users\TT\Documents\Visual Studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.pdb
 C:\Users\TT\documents\visual studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Release\图片文件合成器.csprojResolveAssemblyReference.cache
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\图片文件合成器.exe
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\图片文件合成器.pdb
+C:\Users\TT\Desktop\imgzip\图片文件合成器\bin\Release\图片文件合成器.exe
+C:\Users\TT\Desktop\imgzip\图片文件合成器\bin\Release\图片文件合成器.pdb
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\图片文件合成器.csprojResolveAssemblyReference.cache
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\MainWindow.baml
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\MsgNG.baml
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\MsgOK.baml
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\MainWindow.g.cs
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\MsgNG.g.cs
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\MsgOK.g.cs
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\App.g.cs
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\图片文件合成器_MarkupCompile.cache
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\图片文件合成器.g.resources
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\图片文件合成器.Properties.Resources.resources
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Release\图片文件合成器.csproj.GenerateResource.Cache

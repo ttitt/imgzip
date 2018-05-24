@@ -12,3 +12,19 @@ C:\Users\TT\documents\visual studio 2013\Projects\图片文件合成器\图片�
 C:\Users\TT\documents\visual studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Debug\图片文件合成器.exe
 C:\Users\TT\documents\visual studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Debug\图片文件合成器.pdb
 C:\Users\TT\documents\visual studio 2013\Projects\图片文件合成器\图片文件合成器\obj\Debug\图片文件合成器.csprojResolveAssemblyReference.cache
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\图片文件合成器.exe
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\图片文件合成器.pdb
+C:\Users\TT\Desktop\imgzip\图片文件合成器\bin\Debug\图片文件合成器.exe
+C:\Users\TT\Desktop\imgzip\图片文件合成器\bin\Debug\图片文件合成器.pdb
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\图片文件合成器.csprojResolveAssemblyReference.cache
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\MainWindow.baml
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\MainWindow.g.cs
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\App.g.cs
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\图片文件合成器_MarkupCompile.cache
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\图片文件合成器.g.resources
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\图片文件合成器.Properties.Resources.resources
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\图片文件合成器.csproj.GenerateResource.Cache
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\MsgOK.baml
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\MsgOK.g.cs
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\MsgNG.baml
+C:\Users\TT\Desktop\imgzip\图片文件合成器\obj\Debug\MsgNG.g.cs

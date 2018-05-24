@@ -65,8 +65,11 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Message.xaml.cs">
-      <DependentUpon>Message.xaml</DependentUpon>
+    <Compile Include="MsgNG.xaml.cs">
+      <DependentUpon>MsgNG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MsgOK.xaml.cs">
+      <DependentUpon>MsgOK.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -96,7 +99,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Message.xaml">
+    <Page Include="MsgNG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MsgOK.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ng.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

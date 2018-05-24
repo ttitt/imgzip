@@ -68,11 +68,13 @@ namespace 图片文件合成器
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.Filter = "图片文件|*.jpg;*.png;*.jpeg;*.bmp;*.gif";
+            dialog.Title = "请选择图片文件";
             if (dialog.ShowDialog() == true)
             {
                 fileimg = dialog.FileName;
                 img.Source = new BitmapImage(new Uri(fileimg));
                 add.Source = new BitmapImage(new Uri("img/add.png", UriKind.Relative));
+                add.ToolTip = "合成";
                 download = false;
             }
         }
@@ -81,11 +83,13 @@ namespace 图片文件合成器
         {
             Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.Filter = "压缩文件|*.rar;*.zip;*.7z;*.tar;*.gz";
+            dialog.Title = "请选择压缩文件";
             if (dialog.ShowDialog() == true)
             {
                 filezip = dialog.FileName;
                 zip.Source = new BitmapImage(new Uri("img/fullzip.png", UriKind.Relative));
                 add.Source = new BitmapImage(new Uri("img/add.png", UriKind.Relative));
+                add.ToolTip = "合成";
                 download = false;
             }
         }
@@ -105,8 +109,8 @@ namespace 图片文件合成器
                 if (result == true)
                 {
                     filename = dlg.FileName;
-                    File.Copy(tempfile + "tt", filename, true);
-                    Message ms = new Message();
+                    File.Copy(tempfile, filename, true);
+                    MsgOK ms = new MsgOK();
                     ms.ShowDialog();
                 }
                 else
@@ -120,9 +124,15 @@ namespace 图片文件合成器
                 {
                     return;
                 }
+                if (FileSize(fileimg))
+                {
+                    MsgNG ms = new MsgNG();
+                    ms.ShowDialog();
+                    return;
+                }
                 tempfile = System.IO.Path.GetTempFileName();
                 ext = System.IO.Path.GetExtension(fileimg);
-
+                System.IO.File.Delete(tempfile);
                 //创建一个进程
                 Process p = new Process();
                 p.StartInfo.FileName = "cmd.exe";
@@ -135,7 +145,7 @@ namespace 图片文件合成器
 
                 string strCMD = "copy /b " + fileimg + " +" + filezip + " " + tempfile;
                 //向cmd窗口发送输入信息
-                p.StandardInput.WriteLine(strCMD + "tt" + "&exit");
+                p.StandardInput.WriteLine(strCMD + "&exit");
 
                 p.StandardInput.AutoFlush = true;
 
@@ -145,7 +155,19 @@ namespace 图片文件合成器
 
                 add.Source = new BitmapImage(new Uri("img/download.png", UriKind.Relative));
                 download = true;
+                add.ToolTip = "下载";
             }
+        }
+
+        private bool FileSize(string img)
+        {
+            FileInfo fi = new FileInfo(img);
+            Int64 size = fi.Length;
+            if (size >= 2097152)
+                return true;
+            else
+                return false;
+            
         }
 
         private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
